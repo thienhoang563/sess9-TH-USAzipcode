@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>is USA zip code or not</title>
+</head>
+<body>
+<script>
+    function is_usaZipCode(str) {
+        var regexp = /^[0-9]{5}(-[0-9]{4})?$/;
+        if (regexp.test(str)){
+            return true;
+        }
+        return false;
+    }
+
+    var zipcode = "03201-2150"
+    console.log(is_usaZipCode(zipcode));
+    zipcode = "7892";
+    console.log(is_usaZipCode(zipcode));
+    zipcode = "98592-5555"
+    console.log(is_usaZipCode(zipcode));
+
+</script>
+</body>
+</html>
